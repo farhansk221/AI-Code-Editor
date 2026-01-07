@@ -7,7 +7,7 @@ dotenv.config();
 
 // CORS configuration - allow Vercel deployments
 const allowedOrigins = [
-  'https://ai-code-editor-frontend.vercel.app',
+  'https://ai-code-editor-fron-git-cca8bc-farhan-shaikhs-projects-a91d2137.vercel.app/',
   /^https:\/\/ai-code-editor-frontend.*\.vercel\.app$/,
   process.env.FRONTEND_URL
 ].filter(Boolean);
