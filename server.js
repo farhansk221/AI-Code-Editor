@@ -5,7 +5,10 @@ const app = express();
 const dotenv = require('dotenv');
 dotenv.config();
 
-app.use(cors({origin: process.env.FRONTEND_URL}));
+app.use(cors({
+  origin: process.env.FRONTEND_URL || 'https://ai-code-editor-frontend.vercel.app',
+  credentials: true
+}));
 app.use(express.json());
 
 // Initialize Gemini AI
